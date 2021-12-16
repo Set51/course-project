@@ -97,11 +97,11 @@ body {
     padding: 0;
 }
 
-.header {
+.header__nav-wrapper {
     background-color: var(--color-dark);
 }
 
-.header__container {
+.header__nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,3 +138,27 @@ body {
     color: var(--color-light);
 }
 
+.header__style-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.header__style-container {
+    display: flex;
+    padding: 28px 0;
+}
+
+.style__list {
+    display: flex;
+}
+
+.style__item {
+    margin-right: 111px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.header__select {
+    border: none;
+}
