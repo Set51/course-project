@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blanchard</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -64,6 +66,13 @@
     <section class="hero">
       <div class="container">
         <div class="hero__container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="hero__container--bg-fortress swiper-slide"></div>
+              <div class="hero__container--bg-holy swiper-slide"></div>
+              <div class="hero__container--bg-green swiper-slide"></div>
+            </div>
+          </div>
           <div class="hero__content">
             <h1 class="hero__title">Прикоснитесь к прекрасному</h1>
             <p class="hero__subtitle">
@@ -423,5 +432,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/choices.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
