@@ -1,0 +1,231 @@
+@media (max-width: 1620px) {
+    .container {
+        margin: 0 25px;
+    }
+
+    .hero__content {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .nav__item {
+        margin-right: 30px;
+    }
+
+    .nav__item:last-child {
+        margin-right: 0;
+    }
+
+    .style__item {
+        margin-right: 15px;
+    }
+
+    .style__item:last-child {
+        margin-right: 0;
+    }
+
+    .hero__content {
+        width: 60%;
+    }
+
+    .gallery__swiper-wrapper {
+        max-width: 800px;
+    }
+
+    .dates__list {
+        margin-right: 15px;
+    }
+
+    .contact__container {
+        flex-direction: column;
+    }
+
+    .contact__group {
+        width: 45%;
+    }
+
+    .contact__msg-wrap {
+        margin-left: 0;
+    }
+   
+}
+
+@media (max-width: 1024px) {
+    .container {
+        margin: 0 50px;
+    }
+
+    .header__logo {
+        margin: 0 auto;
+    }
+
+    .header__style-wrapper {
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        z-index: 60;
+        width: 36px;
+        height: 28px;
+        border: none;
+        border-top: 3px solid var(--color-light);
+        background-color: transparent;
+    }
+
+    .header__burger::before,
+    .header__burger::after {
+        content: "";
+        position: absolute;
+        z-index: 30;
+        width: 100%;
+        height: 3px;
+        left: 0;
+        background-color: var(--color-light);
+    }
+
+    .header__burger::before {
+        width: 80%;
+        top: 9px;
+    }
+
+    .header__burger::after {
+        width: 60%;
+        top: 21px;
+    }
+
+    .burger__menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        padding-top: 110px;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: transform .3s ease-in-out;
+        transform: translateX(-101%)
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__btn {
+        align-self: flex-start;
+        margin-left: 0;
+        padding: 19px 88px;
+        font-size: 24px;
+        line-height: 32px;
+        border-radius: 50px;
+        border: 2px solid var(--color-primary);
+        transition: background-color .3s ease-in-out, color 3.s ease-in-out;
+    }
+
+    .header__btn:hover {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+    }
+
+    .header__btn:hover svg path {
+        fill: var(--color-light);
+    }
+
+  
+
+    .header__search-btn {
+        display: block;
+        width: 33px;
+        height: 33px;
+        outline: none;
+        transition: background-color .3s ease-in-out;
+    }
+
+    .header__search-btn svg path {
+        transition: fill .3s ease-in-out;
+    }
+
+    .header__search-btn svg rect {
+        transition: fill .3s ease-in-out;
+    }
+
+    .header__search-btn:hover svg path {
+        fill: var(--color-primary);
+    }
+
+    .header__search-btn:hover svg rect {
+        fill: var(--color-primary);
+    }
+
+    .header__search-btn:focus {
+        background-color: var(--color-primary);
+    }
+
+    .header__search-btn:focus {
+        background-color: var(--color-primary);
+    }
+
+    .header__search-btn:active {
+        background-color: transparent;
+    }
+
+    .header__search-btn:active {
+        background-color: transparent;
+    }
+
+    .header__search-btn:active svg path {
+        fill: var(--color-primary-dark);
+    }
+
+    .header__search-btn:active svg rect {
+        fill: var(--color-primary-dark);
+    }
+
+    .nav__item {
+        margin: 0;
+        margin-bottom: 35px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .nav__item:last-child {
+        margin-bottom: 100px;
+    }
+
+    .burger__menu.menu-is-active {
+        transform: none;
+    }
+
+    
+    .style__list {
+        display: none;
+    }
+
+    .hero__content {
+        width: 65%;
+        padding-bottom: 85px;
+    }
+
+    .gallery__swiper-wrapper {
+        max-width: 600px;
+    }
+
+    .dates__list {
+        display: none;
+    }
+    .dates__list--media-vision {
+        display: block;
+    }
+
+    
+
+   
+
+
+}
