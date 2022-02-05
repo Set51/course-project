@@ -692,6 +692,12 @@ body {
 }
 
 .is-open .choices__inner {
+    background-image: url('../img/gallery-choices-arrow-open.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 12px) center;
+}
+
+.is-open .choices__inner {
     border-radius: 10px;
 }
 
