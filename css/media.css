@@ -33,10 +33,6 @@
         max-width: 800px;
     }
 
-    .dates__list {
-        margin-right: 15px;
-    }
-
     .contact__container {
         flex-direction: column;
     }
@@ -96,6 +92,19 @@
         top: 21px;
     }
 
+    .header__burger.menu-is-active {
+        transform: rotate(45deg) translate(0px, 10px);
+    }
+
+    .header__burger.menu-is-active::before {
+        display: none;
+    }
+
+    .header__burger.menu-is-active::after {
+        transform: rotate(90deg) translate(-24px, 0px);
+        width: 100%;
+    }
+
     .burger__menu {
         display: flex;
         flex-direction: column;
@@ -104,7 +113,7 @@
         left: 0;
         z-index: 50;
         width: 100%;
-        height: 100%;
+        height: 768px;
         padding: 50px;
         padding-top: 110px;
         background-color: rgba(0, 0, 0, 0.9);
@@ -125,7 +134,7 @@
         line-height: 32px;
         border-radius: 50px;
         border: 2px solid var(--color-primary);
-        transition: background-color .3s ease-in-out, color 3.s ease-in-out;
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
     }
 
     .header__btn:hover {
@@ -136,8 +145,6 @@
     .header__btn:hover svg path {
         fill: var(--color-light);
     }
-
-  
 
     .header__search-btn {
         display: block;
@@ -208,24 +215,771 @@
     }
 
     .hero__content {
-        width: 65%;
-        padding-bottom: 85px;
+        width: 71%;
+        padding-top: 210px;
+        padding-bottom: 115px;
+    }
+
+    .hero__title {
+        width: 90%;
+
+    }
+    .hero__subtitle {
+        margin: 0;
+        margin-bottom: 135px;
+    }
+
+    .hero__btn {
+        padding: 21px 33px;
+    }
+
+    .about__container {
+        padding-bottom: 53px;
+    }
+
+    .about__descr {
+        width: 100%;
     }
 
     .gallery__swiper-wrapper {
         max-width: 600px;
     }
 
+    .gallery__slide {
+        height: 315px;
+    }
+
+    .gallery__subtitle {
+        line-height: 30px;
+        margin-bottom: 6px;
+    }
+    
+    .catalog__descr {
+        width: 100%;
+    }
+
+    .catalog__artist {
+       margin-right: 25px;
+    }
+
+    .catalog__content {
+        flex-basis: 53%;
+    }
+
+
+    .catalog__dates {
+        margin-left: 25px;
+    }
+
+    .edition__check-list {
+        margin-bottom: 35px;
+    }
+
     .dates__list {
+        max-height: 445px;
+        padding-bottom: 0;
+    }
+
+    .dates__painters {
+        margin-right: 65px;
+    }
+
+    .event__content-wrapper {
+        padding: 13px 34px;
+    }
+
+    .event__item picture img {
+        height: 200px;
+    }
+
+    .event__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .event__place {
+        align-self: flex-end;
+
+    }
+
+    .event__date {
+        align-self: flex-end;
+        margin-bottom: 0;
+    }
+
+    .event__descr {
+        margin-bottom: -10px;
+    }
+
+    .event__link-wrapper {
+        padding-left: 28px;
+    }
+
+    .event-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .event__button-next {
         display: none;
     }
-    .dates__list--media-vision {
+
+    .event__pagination {
         display: block;
     }
 
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,7px);
+    }
+
+    .project__descr {
+        width: 100%;
+    }
+
+    .project__swiper {
+        padding: 0 50px;
+    }
+
+    .project__swiper-title {
+        margin-bottom: 25px;
+    }
+
+    .contact__adress-wrap {
+        margin-bottom: 35px;
+    }
+
+    .contact__form {
+        margin-bottom: 33px;
+    }
+
+    .footer__social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__social-link svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer__social-icon:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .footer__container {
+        align-items: center;
+        padding: 40px 0;
+    }
     
+}
 
+@media (max-width: 900px) {
+    .hero__content {
+        width: 75%;
+    }
+
+    .about__descr {
+        width: 100%;
+    }
+
+    .gallery {
+        background-size: cover;
+    }
+
+    .gallery__content-wrapper {
+        flex-direction: column;
+        
+    }
+
+    .gallery__swiper-wrapper {
+        margin: 0 auto;
+    }
+
+    .catalog__descr {
+        width: 100%;
+    }
+
+    .catalog__bottom-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .project__descr {
+        width: 100%;
+    }
+
+    .contact__form {
+        flex-wrap: wrap;
+    }
+
+    .contact__group-wrap {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__content {
+        width: 100%;
+    }
+
+    .dates__list {
+        max-height: 350px;
+    }
+
+    .gallery__filter {
+        width: 42%;
+    }
+
+    .filter-wrapper {
+        margin-bottom: 37px;
+    }
+
+    .edition__check-list {
+        margin-bottom: 17px;
+    }
+
+    .gallery__swiper-wrapper {
+        max-width: 666px;
+    }
+
+    .gallery__slide {
+        height: 330px;
+    }
+
+    .catalog__dates {
+        margin-left: 0; 
+    }
+
+    .catalog__descr {
+        margin-bottom: 20px;
+    }
+
+    .dates__list {
+        max-height: 355px;
+        padding: 25px 0;
+    }
+
+    .dates__painters {
+        margin-right: 60px;
+    }
+
+    .dates__title--border {
+        margin-bottom: 40px;
+    }
+
+    .catalog__artist {
+        flex-basis: 100%;
+        margin-right: 0;    
+    }
+
+    .catalog__container {
+        padding-bottom: 72px;
+    }
+
+    .event__content-wrapper {
+        padding-bottom: 33px;
+    }
+
+    .project__descr {
+        margin-bottom: 30px;
+    }
+
+    .project__slide img {
+        width: 264px;
+        height: 106px;
+    }
+
+    .contact__group {
+        width: 48%;
+    }
+
+    .contact__group:last-child {
+        margin-right: 0;
+    }
+
+    .contact__group-wrap {
+        margin-bottom: 13px;
+    }
+
+    .contact__btn {
+        padding: 11px 28px;
+    }
    
+}
 
+@media (max-width: 640px) {
+    body {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .container {
+       margin: 0 25px;
+    }
+
+    .nav__item {
+       font-size: 18px;
+       margin-bottom: 25px;
+    }
+
+    .nav__item:last-child {
+       margin-bottom: 50px;
+    }
+
+    .burger__menu {
+       height: 688px;
+    }
+
+    .hero__content {
+        padding-top: 150px;
+    }
+
+    .hero__title {
+       font-size: 40px;
+       line-height: 44px;
+    }
+
+    .event__item picture img {
+       width: 100%;
+    }
+
+    .gallery__filter {
+        width: 60%;
+        margin-right: 0;
+    }
+
+    .dates__list {
+       max-height: 640px;
+    }
+
+    .dates__painters {
+        margin-right: 10px;
+    }
+
+    .footer__container {
+     flex-direction: column;
+    }
 
 }
+
+@media (max-width: 320px) {
+    .container {
+        font-size: 14px;
+        margin: 0 15px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .header__nav-container {
+        align-items: stretch;
+        padding-top: 13px;
+        padding-bottom: 0;
+    }
+
+    .burger__menu {
+        padding: 50px 15px;
+    }
+
+    .header__burger {
+        width: 25px;
+        height: 18px;
+        border-top: 2px solid var(--color-light);
+    }
+
+    .header__burger::before {
+        top: 7px;
+        width: 65%;
+        height: 2px;
+    }
+
+    .header__burger::after {
+        top: 15px;
+        width: 35%;
+        height: 2px;
+    }
+
+    .header__burger.menu-is-active::after {
+        transform: rotate(90deg) translate(-17px, 0px);
+        width: 100%;
+    }
+
+    .header__logo {
+        padding: 0;
+    }
+
+    .header__search-btn {
+        width: 19px;
+        height: 19px;
+    }
+
+    .header__search-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .nav__item {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .header__btn {
+        padding: 11px 31px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 45px;
+        z-index: 10;
+    }
+
+    .hero__title {
+        width: 90%;
+        margin-bottom: 12px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero__subtitle {
+        width: 90%;
+        margin-bottom: 37px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .hero__btn {
+        padding: 10px 16px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .about__container {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+
+    .about__descr {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .gallery__container {
+        padding-top: 50px;
+        padding-bottom: 48px;
+    }
+
+    .gallery__title {
+        margin-bottom: 13px;
+    }
+
+    .gallery__subtitle  {
+        line-height: 33px;
+    }
+    
+    .gallery__filter {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .choices__item {
+        line-height: 19px;
+    }
+
+    .filter-wrapper {
+        margin-bottom: 22px;    
+    }
+
+    .gallery__swiper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gallery__slide {
+        height: 367px;
+        margin-right: 0;
+    }
+
+    .edition__check-list {
+        margin-bottom: 30px;
+    }
+
+    .gallery__btn {
+        padding-top: 20px;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    .catalog__container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .catalog__title {
+        margin-bottom: 15px;
+    }
+
+    .catalog__descr {
+        display: none;
+    }
+
+    .dates__title {
+        padding: 18px 0;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .dates__title--border {
+        margin-bottom: 60px;
+    }
+
+    .dates__list {
+        max-height: 850px;
+        padding-bottom: 25px;
+    }
+
+    .dates__painters {
+        margin: 0;
+    }
+
+    .dates__icon {
+        width: 30px;
+        height: 30px;
+        background-image: url('../img/arrow-small.png');
+    }
+
+    .dates__btn {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .dates__painters:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .catalog__artist {
+        margin-right: 0;
+    }
+
+    .catalog__artist img {
+        margin-bottom: 10px;
+    }
+
+    .artist__title {
+        margin: 0;
+        margin-bottom: 13px;
+    }
+
+    .event__container {
+        padding-bottom: 20px;
+    }
+
+    .event__title {
+        margin-bottom: 10px;
+    }
+
+    .event__item picture img {
+        height: 200px;
+    }
+
+    .event__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 13px 22px;
+        padding-bottom: 20px;
+    }
+
+    .event-wrapper {
+        margin-bottom: 1px;
+    }
+
+    .event__place {
+        align-self: flex-end;
+
+    }
+
+    .event__date {
+        align-self: flex-end;
+        margin-bottom: 7px;
+    }
+
+    .event__descr {
+        font-size: 16px;
+    }
+
+    .event__link-wrapper {
+        padding-left: 28px;
+    }
+
+    .event__link {
+        padding: 0;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+
+    .event__slide {
+        margin-bottom: 10px;
+    }
+
+    .project__container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .project__descr {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .project__title {
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .project__swiper-title {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+
+    .project__slide img {
+        width: 195px;
+        height: 65px;
+    }
+
+    .project__button-next {
+        top: 26%;
+    }
+
+    .project__button-prev {
+        top: 26%;
+    }
+
+    .contact {
+        border-top: none;
+    }
+
+    .contact__container {
+        padding-top: 18px;
+    }
+
+    .contact__form {
+        margin-bottom: 24px;
+    }
+
+    .contact__form-title {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .contact__form-adress {
+        margin-right: 0;
+    }
+
+    .contact__input {
+        padding: 3px 24px;
+    }
+
+    .contact__group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact__group:last-child {
+        margin-bottom: 0;
+    }
+
+    .contact__adress-wrap {
+        margin-bottom: 10px;
+    }
+
+    .js-validate-error-label {
+        top: -34px;
+    }
+    
+    .contact__btn {
+        display: none;
+    }
+
+    .contact__btn--media {
+        display: block;
+        padding: 10px 33px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        border: 2px solid var(--color-primary);
+        border-radius: 100px;
+        color: var(--color-primary);
+    }
+
+    .contact__click {
+        margin-bottom: 7px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .contact__link svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact__item-msg {
+        margin-right: 28px;
+    }
+
+    .contact__map {
+        height: 320px;
+    }
+
+    .contact__list-msg {
+        margin-bottom: -14px;
+    }
+
+    .footer__container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding-top: 22px;
+        padding-bottom: 12px;
+    }
+
+    .footer__social-icon:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .footer__social-list {
+        margin-bottom: 10px;
+    }
+
+    .footer__social-link svg {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+

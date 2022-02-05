@@ -16,11 +16,10 @@ window.addEventListener('DOMContentLoaded',function() {
     });
     document.querySelector('#header__burger').addEventListener('click', function() {
         document.querySelector('#burger__menu').classList.toggle('menu-is-active');
+        document.querySelector('#header__burger').classList.toggle('menu-is-active');
     });
   
 });
-
-
 
 window.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.hero__swiper', {
@@ -47,12 +46,39 @@ window.addEventListener('DOMContentLoaded', function() {
         },
         pagination: {
             el: '.event__pagination',
+            clickable: true
+        },
+        breakpoints: {
+            1620: {
+                slidesPerView: 3,
+                spaceBetween: 50
+            },
+            1440: {
+                slidesPerView: 3,
+                spaceBetween: 50
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 25
+            },
+            900: {
+                slidesPerView: 3,
+                spaceBetween: 25
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 34
+            },
+            320: {
+                slidesPerView: 'auto',
+                spaceBetween: 0
+            },
+           
         },
         
     });
 
 });
-
 
 window.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.gallery__swiper', {
@@ -70,6 +96,18 @@ window.addEventListener('DOMContentLoaded', function() {
             1024: {
                 slidesPerView: 2,
                 spaceBetween: 34
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 34
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            320: {
+                slidesPerView: 'auto',
+                spaceBetween: 0
             },
            
         },
@@ -98,9 +136,22 @@ window.addEventListener('DOMContentLoaded', function() {
             },
             1024: {
                 slidesPerView: 2,
+                spaceBetween: 50
+            },
+            768: {
+                slidesPerView: 2,
                 spaceBetween: 34
             },
-           
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 30
+            },
+            
         },
         navigation: {
             nextEl: '.project__button-next',
