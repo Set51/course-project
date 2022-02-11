@@ -18,20 +18,22 @@
     <div class="header__nav-wrapper">
       <div class="container header__nav-container">
         <button class="header__burger" id="header__burger" aria-label="бургер меню"></button>
-        <picture>
-          <source srcset="img/logo-mobile.svg" media="(max-width: 320px)">
-          <img src="img/logo.svg" alt="logo" class="header__logo">
-        </picture>
+        <a href="#" class="header__logo-link">
+          <picture>
+            <source srcset="img/logo-mobile.svg" media="(max-width: 320px)">
+            <img src="img/logo.svg" alt="logo" class="header__logo">
+          </picture>
+        </a>
         <nav class="header__nav">
-          <div class="burger__menu nav__menu" id="burger__menu">
-            <ul class="nav__list list-reset" >
-              <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Галерея</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">События</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Издания</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Проекты</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <div class="header__burger-menu nav-menu" id="burger__menu">
+            <ul class="header__nav-list list-reset" >
+              <li class="header__item"><a href="#" class="header__link">О нас</a></li>
+              <li class="header__item"><a href="#" class="header__link">Галерея</a></li>
+              <li class="header__item"><a href="#" class="header__link">Каталог</a></li>
+              <li class="header__item"><a href="#" class="header__link">События</a></li>
+              <li class="header__item"><a href="#" class="header__link">Издания</a></li>
+              <li class="header__item"><a href="#" class="header__link">Проекты</a></li>
+              <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
             </ul>
             <a href="#" class="header__btn">
               <svg id="icon" class="header__in-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,133 +53,148 @@
     </div>
     <div class="header__style-wrapper">
       <div class="container header__style-container">
-        <ul class="style__list list-reset">
-          <li class="style__item">
-            <select name="styles" id="header__select-1" class="header__select">
-              <option value="">Релизм</option>
-            </select>
+        <ul class="header__style-list list-reset">
+          <li class="header__style-item">
+            <button id="header__select-1" class="header__select">
+              Релизм
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+                </svg>
+            </button>
+            <div class="header__menu header__menu--position-1" id="header__menu-1" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header__menu-list list-reset" >
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+              </ul>
+            </div>
           </li>
-          <li class="style__item">
-            <select name="styles" id="header__select-2" class="header__select">
-              <option value="">Импрессионизм</option>
-            </select>
+          <li class="header__style-item">
+            <button id="header__select-2" class="header__select">
+              Импрессионизм
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+                </svg>
+            </button>
+            <div class="header__menu header__menu--position-2" id="header__menu-2" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header__menu-list list-reset" >
+                <li class="header__menu-item header__menu-item--mone">Моне</li>
+                <li class="header__menu-item header__menu-item--sisley">Сислей</li>
+                <li class="header__menu-item header__menu-item--mane">Мане</li>
+                <li class="header__menu-item header__menu-item--renuar">Ренуар</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+              </ul>
+            </div>
           </li>
-          <li class="style__item">
-            <select name="styles" id="header__select-3" class="header__select">
-              <option value="">Постимпрессионизм</option>
-            </select>
+          <li class="header__style-item">
+            <button id="header__select-3" class="header__select">
+              Постимпрессионизм
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+                </svg>
+            </button>
+            <div class="header__menu header__menu--position-3" id="header__menu-3" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header__menu-list list-reset" >
+                <li class="header__menu-item header__menu-item--vangog">Ван Гог</li>
+                <li class="header__menu-item header__menu-item--sezann">Сезанн</li>
+                <li class="header__menu-item header__menu-item--gogen">Гоген</li>
+                <li class="header__menu-item header__menu-item--sera">Сёра</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+              </ul>
+            </div>
           </li>
-          <li class="style__item">
-            <select name="styles" id="header__select-4" class="header__select">
-              <option value="">Авангард</option>
-            </select>
+          <li class="header__style-item">
+            <button id="header__select-4" class="header__select">
+              Авангард
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+                </svg>
+            </button>
+            <div class="header__menu header__menu--position-4" id="header__menu-4" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header__menu-list list-reset" >
+                <li class="header__menu-item header__menu-item--kandinskiy">Кандинский</li>
+                <li class="header__menu-item header__menu-item--marinetti">Маринетти</li>
+                <li class="header__menu-item header__menu-item--malevich">Малевич</li>
+                <li class="header__menu-item header__menu-item--picasso">Пикассо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+              </ul>
+            </div>
           </li>
-          <li class="style__item">
-            <select name="styles" id="header__select-5" class="header__select">
-              <option value="">Футуризм</option>
-            </select>
+          <li class="header__style-item">
+            <button id="header__select-5" class="header__select">
+              Футуризм
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L1 1" stroke="white"/>
+                </svg>
+            </button>
+            <div class="header__menu header__menu--position-5" id="header__menu-5" data-simplebar data-simplebar-auto-hide="false">
+              <ul class="header__menu-list list-reset" >
+                <li class="header__menu-item header__menu-item--karra">Карра</li>
+                <li class="header__menu-item header__menu-item--pratella">Прателла</li>
+                <li class="header__menu-item header__menu-item--severini">Северини</li>
+                <li class="header__menu-item header__menu-item--balla">Балла</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+                <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
+                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
+                <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
+              </ul>
+            </div>
           </li>
         </ul>
-        <div class="header__menu header__menu--position-1" id="header__menu-1" data-simplebar data-simplebar-auto-hide="false">
-          <ul class="menu__list list-reset" >
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-          </ul>
-        </div>
-        <div class="header__menu header__menu--position-2" id="header__menu-2" data-simplebar data-simplebar-auto-hide="false">
-          <ul class="menu__list list-reset" >
-            <li class="menu__item menu__item--mone">Моне</li>
-            <li class="menu__item menu__item--sisley">Сислей</li>
-            <li class="menu__item menu__item--mane">Мане</li>
-            <li class="menu__item menu__item--renuar">Ренуар</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-          </ul>
-        </div>
-        <div class="header__menu header__menu--position-3" id="header__menu-3" data-simplebar data-simplebar-auto-hide="false">
-          <ul class="menu__list list-reset" >
-            <li class="menu__item menu__item--vangog">Ван Гог</li>
-            <li class="menu__item menu__item--sezann">Сезанн</li>
-            <li class="menu__item menu__item--gogen">Гоген</li>
-            <li class="menu__item menu__item--sera">Сёра</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-          </ul>
-        </div>
-        <div class="header__menu header__menu--position-4" id="header__menu-4" data-simplebar data-simplebar-auto-hide="false">
-          <ul class="menu__list list-reset" >
-            <li class="menu__item menu__item--kandinskiy">Кандинский</li>
-            <li class="menu__item menu__item--marinetti">Маринетти</li>
-            <li class="menu__item menu__item--malevich">Малевич</li>
-            <li class="menu__item menu__item--picasso">Пикассо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-          </ul>
-        </div>
-        <div class="header__menu header__menu--position-5" id="header__menu-5" data-simplebar data-simplebar-auto-hide="false">
-          <ul class="menu__list list-reset" >
-            <li class="menu__item menu__item--karra">Карра</li>
-            <li class="menu__item menu__item--pratella">Прателла</li>
-            <li class="menu__item menu__item--severini">Северини</li>
-            <li class="menu__item menu__item--balla">Балла</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-            <li class="menu__item menu__item--tintoretto">Тинторетто</li>
-            <li class="menu__item menu__item--fridrih">Фридрих</li>
-            <li class="menu__item menu__item--leonardo">Леонардо</li>
-            <li class="menu__item menu__item--verokye">Верроккьо</li>
-          </ul>
-        </div>
         <div class="header__seach-wrap">
           <span class="header__seach-icon"></span>
           <input type="text" class="header__search" placeholder="Поиск по сайту" aria-label="поиск по сайту">
@@ -231,25 +248,25 @@
                   <option class="gallery__option" value="artstyle">Скульптура</option>                 
                 </select>
               </div>
-              <ul class="edition__check-list list-reset">
-                <li class="edition__check-item">
-                  <label class="edition__check-label">
-                    <input type="checkbox" class="edition__check-input">
-                    <span class="edition__check-box"></span>
+              <ul class="gallery__check-list list-reset">
+                <li class="gallery__check-item">
+                  <label class="gallery__check-label">
+                    <input type="checkbox" class="gallery__check-input">
+                    <span class="gallery__check-box"></span>
                     XIX век
                   </label>
                 </li>
-                <li class="edition__check-item">
-                  <label class="edition__check-label">
-                    <input type="checkbox" class="edition__check-input">
-                    <span class="edition__check-box"></span>
+                <li class="gallery__check-item">
+                  <label class="gallery__check-label">
+                    <input type="checkbox" class="gallery__check-input">
+                    <span class="gallery__check-box"></span>
                     XX век
                   </label>
                 </li>
-                <li class="edition__check-item">
-                  <label class="edition__check-label">
-                    <input type="checkbox" class="edition__check-input">
-                    <span class="edition__check-box"></span>
+                <li class="gallery__check-item">
+                  <label class="gallery__check-label">
+                    <input type="checkbox" class="gallery__check-input">
+                    <span class="gallery__check-box"></span>
                     Современность
                   </label>
                 </li>
@@ -300,9 +317,9 @@
               <div class="tabs-item tabs-item--active" data-target="one">
                 <div class="catalog__artist">
                   <img src="img/catalog-artist.jpg" alt="artist">
-                  <h3 class="artist__title">Доменико Гирландайо</h3>
-                  <h4 class="artist__date">2 июня 1448 — 11 января 1494.</h4>
-                  <p class="artist__descr">
+                  <h3 class="catalog__artist-title">Доменико Гирландайо</h3>
+                  <h4 class="catalog__artist-date">2 июня 1448 — 11 января 1494.</h4>
+                  <p class="catalog__artist-descr">
                     Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
                   </p>
                 </div>
@@ -310,239 +327,143 @@
               <div class="tabs-item" data-target="two">
                 <div class="catalog__artist">
                   <img src="img/artist-plug.jpg" alt="artist">
-                  <h3 class="artist__title">Что мы о нём знаем?</h3>
-                  <p class="artist__descr">
+                  <h3 class="catalog__artist-title">Что мы о нём знаем?</h3>
+                  <p class="catalog__artist-descr">
                     Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!   
                   </p>
-                  <a href="#" class="artist__link">В галерею</a>
+                  <a href="#" class="catalog__artist-link">В галерею</a>
                 </div>
               </div>
             </div>
             <div class="catalog__dates">
               <div class="accordion" id="accordion">
-                <h3 class="dates__title">
+                <h3 class="catalog__dates-title">
                   C 1400 по 1499 гг.
-                  <span class="dates__icon"></span>
+                  <span class="catalog__dates-icon"></span>
                 </h3>
-                <div class="dates__descr-wrapper">
-                  <ul class="dates__list list-reset">
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бенедетто ди Биндо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бергоньоне, Амброджо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Биссоло, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Больтраффио, Джованни</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бонсиньори, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Боттичини, Рафаэлло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Брамантино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бреа, Людовико</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бьяджо д’Антонио Туччи</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Веккьетта</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Андреа Верроккьо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn tabs-btn btn-reset dates__btn--active" data-path="one">Доменико Гирландайо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Беноццо Гоццоли</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Граначчи, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Грегорио ди Чекко</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Джованни да Удине</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Джованни ди Паоло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Джорджоне</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Парентино, Бернардо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пезеллино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пьетро Перуджино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Перуцци, Бальдассаре</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пизанелло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пинтуриккьо</button></li>
+                <div class="catalog__dates-descr-wrapper">
+                  <ul class="catalog__dates-list list-reset">
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Бенедетто ди Биндо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Бергоньоне, Амброджо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Биссоло, Франческо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Больтраффио, Джованни</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Бонсиньори, Франческо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Боттичини, Рафаэлло</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Брамантино</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Бреа, Людовико</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Бьяджо д’Антонио Туччи</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Веккьетта</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Андреа Верроккьо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn tabs-btn btn-reset dates__btn--active" data-path="one">Доменико Гирландайо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Беноццо Гоццоли</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Граначчи, Франческо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Грегорио ди Чекко</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Джованни да Удине</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Джованни ди Паоло</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Джорджоне</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Парентино, Бернардо</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Пезеллино</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Пьетро Перуджино</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Перуцци, Бальдассаре</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Пизанелло</button></li>
+                    <li class="catalog__dates-painters"><button class="tabs-btn btn-reset catalog__dates-btn" data-path="two">Пинтуриккьо</button></li>
                   </ul>
                 </div>
-                <h3 class="dates__title">
+                <h3 class="catalog__dates-title">
                   C 1500 по 1599 гг.
-                  <span class="dates__icon"></span>
+                  <span class="catalog__dates-icon"></span>
                 </h3>
-                <div class="dates__descr-wrapper">
-                  <ul class="dates__list list-reset">
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бенедетто ди Биндо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бергоньоне, Амброджо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Биссоло, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Больтраффио, Джованни</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бонсиньори, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Боттичини, Рафаэлло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Брамантино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бреа, Людовико</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Бьяджо д’Антонио Туччи</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Веккьетта</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Андреа Верроккьо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn tabs-btn btn-reset--active" data-path="one">Доменико Гирландайо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Беноццо Гоццоли</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Граначчи, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Грегорио ди Чекко</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Джованни да Удине</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Джованни ди Паоло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Джорджоне</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Парентино, Бернардо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пезеллино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пьетро Перуджино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Перуцци, Бальдассаре</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пизанелло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset dates__btn" data-path="two">Пинтуриккьо</button></li>
-                  </ul>  
+                <div class="catalog__dates-descr-wrapper">
+                  <div class="catalog__plug">
+                    <div class="catalog__plug-img-wrap">
+                      <div class="catalog__plug-img"></div>
+                    </div>
+                    <div class="catalog__plug-info">
+                      <h3 class="catalog__plug-title">Здесь пока пусто</h3>
+                      <p class="catalog__plug-descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalog__plug-link">В галерею</a>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="dates__title">
+                <h3 class="catalog__dates-title">
                   C 1600 по 1699 гг.
-                  <span class="dates__icon"></span>
+                  <span class="catalog__dates-icon"></span>
                 </h3>
-                <div class="dates__descr-wrapper">
-                  <ul class="dates__list list-reset">
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бенедетто ди Биндо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бергоньоне, Амброджо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Биссоло, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Больтраффио, Джованни</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бонсиньори, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Боттичини, Рафаэлло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Брамантино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бреа, Людовико</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бьяджо д’Антонио Туччи</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Веккьетта</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Андреа Верроккьо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset tabs-btn btn-reset--active" data-path="one">Доменико Гирландайо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Беноццо Гоццоли</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Граначчи, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Грегорио ди Чекко</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни да Удине</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни ди Паоло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джорджоне</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Парентино, Бернардо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пезеллино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пьетро Перуджино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Перуцци, Бальдассаре</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пизанелло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пинтуриккьо</button></li>
-                  </ul>  
+                <div class="catalog__dates-descr-wrapper">
+                  <div class="catalog__plug">
+                    <div class="catalog__plug-img-wrap">
+                      <div class="catalog__plug-img"></div>
+                    </div>
+                    <div class="catalog__plug-info">
+                      <h3 class="catalog__plug-title">Здесь пока пусто</h3>
+                      <p class="catalog__plug-descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalog__plug-link">В галерею</a>
+                    </div>
+                  </div>  
                 </div>
-                <h3 class="dates__title">
+                <h3 class="catalog__dates-title">
                   C 1700 по 1799 гг.
-                  <span class="dates__icon"></span>
+                  <span class="catalog__dates-icon"></span>
                 </h3>
-                <div class="dates__descr-wrapper">
-                  <ul class="dates__list list-reset">
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бенедетто ди Биндо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бергоньоне, Амброджо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Биссоло, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Больтраффио, Джованни</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бонсиньори, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Боттичини, Рафаэлло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Брамантино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бреа, Людовико</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бьяджо д’Антонио Туччи</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Веккьетта</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Андреа Верроккьо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset tabs-btn btn-reset--active" data-path="one">Доменико Гирландайо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Беноццо Гоццоли</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Граначчи, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Грегорио ди Чекко</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни да Удине</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни ди Паоло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джорджоне</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Парентино, Бернардо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пезеллино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пьетро Перуджино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Перуцци, Бальдассаре</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пизанелло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пинтуриккьо</button></li>
-                  </ul>  
+                <div class="catalog__dates-descr-wrapper">
+                  <div class="catalog__plug">
+                    <div class="catalog__plug-img-wrap">
+                      <div class="catalog__plug-img"></div>
+                    </div>
+                    <div class="catalog__plug-info">
+                      <h3 class="catalog__plug-title">Здесь пока пусто</h3>
+                      <p class="catalog__plug-descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalog__plug-link">В галерею</a>
+                    </div>
+                  </div>    
                 </div>
-                <h3 class="dates__title">
+                <h3 class="catalog__dates-title">
                   C 1800 по 1899 гг.
-                  <span class="dates__icon"></span>
+                  <span class="catalog__dates-icon"></span>
                 </h3>
-                <div class="dates__descr-wrapper">
-                  <ul class="dates__list list-reset">
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бенедетто ди Биндо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бергоньоне, Амброджо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Биссоло, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Больтраффио, Джованни</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бонсиньори, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Боттичини, Рафаэлло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Брамантино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бреа, Людовико</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бьяджо д’Антонио Туччи</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Веккьетта</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Андреа Верроккьо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset tabs-btn btn-reset--active" data-path="one">Доменико Гирландайо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Беноццо Гоццоли</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Граначчи, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Грегорио ди Чекко</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни да Удине</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни ди Паоло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джорджоне</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Парентино, Бернардо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пезеллино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пьетро Перуджино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Перуцци, Бальдассаре</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пизанелло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пинтуриккьо</button></li>
-                  </ul>  
+                <div class="catalog__dates-descr-wrapper">
+                  <div class="catalog__plug">
+                    <div class="catalog__plug-img-wrap">
+                      <div class="catalog__plug-img"></div>
+                    </div>
+                    <div class="catalog__plug-info">
+                      <h3 class="catalog__plug-title">Здесь пока пусто</h3>
+                      <p class="catalog__plug-descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalog__plug-link">В галерею</a>
+                    </div>
+                  </div>      
                 </div>
-                <h3 class="dates__title">
+                <h3 class="catalog__dates-title">
                   C 1900 по 1999 гг.
                   <span class="dates__icon"></span>
                 </h3>
-                <div class="dates__descr-wrapper">
-                  <ul class="dates__list list-reset">
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бенедетто ди Биндо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бергоньоне, Амброджо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Биссоло, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Больтраффио, Джованни</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бонсиньори, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Боттичини, Рафаэлло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Брамантино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бреа, Людовико</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бьяджо д’Антонио Туччи</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Веккьетта</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Андреа Верроккьо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset tabs-btn btn-reset--active" data-path="one">Доменико Гирландайо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Беноццо Гоццоли</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Граначчи, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Грегорио ди Чекко</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни да Удине</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни ди Паоло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джорджоне</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Парентино, Бернардо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пезеллино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пьетро Перуджино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Перуцци, Бальдассаре</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пизанелло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пинтуриккьо</button></li>
-                  </ul>  
+                <div class="catalog__dates-descr-wrapper">
+                  <div class="catalog__plug">
+                    <div class="catalog__plug-img-wrap">
+                      <div class="catalog__plug-img"></div>
+                    </div>
+                    <div class="catalog__plug-info">
+                      <h3 class="catalog__plug-title">Здесь пока пусто</h3>
+                      <p class="catalog__plug-descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalog__plug-link">В галерею</a>
+                    </div>
+                  </div>      
                 </div>
-                <h3 class="dates__title dates__title--border">
+                <h3 class="catalog__dates-title catalog__dates-title--border">
                   C 2000 г.
-                  <span class="dates__icon"></span>
+                  <span class="catalog__dates-icon"></span>
                 </h3>
-                <div class="dates__descr-wrapper">
-                  <ul class="dates__list list-reset">
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бенедетто ди Биндо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бергоньоне, Амброджо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Биссоло, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Больтраффио, Джованни</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бонсиньори, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Боттичини, Рафаэлло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Брамантино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бреа, Людовико</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Бьяджо д’Антонио Туччи</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Веккьетта</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Андреа Верроккьо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset tabs-btn btn-reset--active" data-path="one">Доменико Гирландайо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Беноццо Гоццоли</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Граначчи, Франческо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Грегорио ди Чекко</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни да Удине</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джованни ди Паоло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Джорджоне</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Парентино, Бернардо</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пезеллино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пьетро Перуджино</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Перуцци, Бальдассаре</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пизанелло</button></li>
-                    <li class="dates__painters"><button class="tabs-btn btn-reset" data-path="two">Пинтуриккьо</button></li>
-                  </ul>  
+                <div class="catalog__dates-descr-wrapper">
+                  <div class="catalog__plug">
+                    <div class="catalog__plug-img-wrap">
+                      <div class="catalog__plug-img"></div>
+                    </div>
+                    <div class="catalog__plug-info">
+                      <h3 class="catalog__plug-title">Здесь пока пусто</h3>
+                      <p class="catalog__plug-descr">А в галерее вы всегда можете найти что-то интересное для себя</p>
+                      <a href="#" class="catalog__plug-link">В галерею</a>
+                    </div>
+                  </div>      
                 </div>
               </div>
             </div>

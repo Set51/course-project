@@ -1,7 +1,8 @@
 window.addEventListener('DOMContentLoaded',function() {
-    document.querySelector('#header__select-1').addEventListener('click', function() {
+    document.querySelector('#header__select-1').addEventListener('click', function(el) {
         document.querySelector('#header__menu-1').classList.toggle('is-active');
     });
+   
     document.querySelector('#header__select-2').addEventListener('click', function() {
         document.querySelector('#header__menu-2').classList.toggle('is-active');
     });
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded',function() {
     });
   
 });
+
 
 window.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.hero__swiper', {

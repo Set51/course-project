@@ -105,7 +105,7 @@
         width: 100%;
     }
 
-    .burger__menu {
+    .header__burger-menu {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -121,7 +121,7 @@
         transform: translateX(-101%)
     }
 
-    .nav__list {
+    .header__nav-list {
         display: flex;
         flex-direction: column;
     }
