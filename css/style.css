@@ -273,7 +273,7 @@ body {
     height: 30px;
 }
 
-.header__select {
+.header__style-btn {
     font-size: 18px;
     line-height: 25px;
     outline: none;
@@ -283,21 +283,20 @@ body {
     transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
-.header__select:hover {
+.header__style-btn:hover {
     color: var(--color-primary);
 }
 
-.header__select:focus {
+.header__style-btn:focus {
     background-color: var(--color-primary);
 }
 
-.header__select:active {
+.header__style-btn:active {
     color: var(--color-primary-dark);
     background-color: transparent;
 }
 
-.header__select:hover svg {
-    stroke: var(--color-primary);
+.header__style-btn:hover svg {
     fill: var(--color-primary);
 }
 
@@ -449,7 +448,7 @@ body {
     background-image: url('../img/balla.png');
 }
 
-.is-active {
+.header__menu--is-active {
     display: block;
 }
 

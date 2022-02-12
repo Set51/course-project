@@ -1,27 +1,27 @@
-window.addEventListener('DOMContentLoaded',function() {
-    document.querySelector('#header__select-1').addEventListener('click', function(el) {
-        document.querySelector('#header__menu-1').classList.toggle('is-active');
-    });
-   
-    document.querySelector('#header__select-2').addEventListener('click', function() {
-        document.querySelector('#header__menu-2').classList.toggle('is-active');
-    });
-    document.querySelector('#header__select-3').addEventListener('click', function() {
-        document.querySelector('#header__menu-3').classList.toggle('is-active');
-    });
-    document.querySelector('#header__select-4').addEventListener('click', function() {
-        document.querySelector('#header__menu-4').classList.toggle('is-active');
-    });
-    document.querySelector('#header__select-5').addEventListener('click', function() {
-        document.querySelector('#header__menu-5').classList.toggle('is-active');
-    });
-    document.querySelector('#header__burger').addEventListener('click', function() {
-        document.querySelector('#burger__menu').classList.toggle('menu-is-active');
-        document.querySelector('#header__burger').classList.toggle('menu-is-active');
-    });
-  
-});
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll(".header__style-btn").forEach(item => {
+        item.addEventListener("click", function() {
+            let btn = this;
+            let dropdown = this.parentElement.querySelector(".header__menu");
 
+            document.querySelectorAll(".header__menu").forEach(el => {
+                if (el != dropdown) {
+                    el.classList.remove("header__menu--is-active");
+                }
+            })
+            dropdown.classList.toggle("header__menu--is-active")
+        })
+    })
+})
+
+document.addEventListener("click", function (e) {
+    let target = e.target;
+    if (!target.closest(".header__style-list")) {
+        document.querySelectorAll(".header__menu").forEach(el => {
+            el.classList.remove("header__menu--is-active");
+        })
+    }
+})
 
 window.addEventListener('DOMContentLoaded', function() {
     const swiper = new Swiper('.hero__swiper', {
