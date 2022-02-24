@@ -26,28 +26,42 @@
         </a>
         <nav class="header__nav">
           <div class="header__burger-menu nav-menu" id="burger__menu">
-            <ul class="header__nav-list list-reset" >
-              <li class="header__item"><a href="#" class="header__link">О нас</a></li>
-              <li class="header__item"><a href="#" class="header__link">Галерея</a></li>
-              <li class="header__item"><a href="#" class="header__link">Каталог</a></li>
-              <li class="header__item"><a href="#" class="header__link">События</a></li>
-              <li class="header__item"><a href="#" class="header__link">Издания</a></li>
-              <li class="header__item"><a href="#" class="header__link">Проекты</a></li>
-              <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+            <ul class="header__nav-list list-reset">
+              <li class="header__item"><a href="#about"  class="header__link">О нас</a></li>
+              <li class="header__item"><a href="#gallery" class="header__link">Галерея</a></li>
+              <li class="header__item"><a href="#catalog" class="header__link">Каталог</a></li>
+              <li class="header__item"><a href="#event" class="header__link">События</a></li>
+              <li class="header__item"><a href="#project" class="header__link">Проекты</a></li>
+              <li class="header__item"><a href="#contact" class="header__link">Контакты</a></li>
             </ul>
-            <a href="#" class="header__btn">
-              <svg id="icon" class="header__in-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
-              </svg>
-              Войти
-            </a>
+            <div class="header__btn-wrap">
+              <a href="#" class="header__btn">
+                <svg id="icon" class="header__in-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+                </svg>
+                Войти
+              </a>
+            </div>
           </div>
-          <button class="header__search-btn btn-reset">
-            <svg class="header__search-btn-svg" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58142 21.0461)" fill="white"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.1741C10.0376 24.1741 5.32763 19.2726 5.32763 13.5105C5.32763 7.74829 10.0376 2.84682 16.1246 2.84682C22.2115 2.84682 26.9215 7.74829 26.9215 13.5105C26.9215 19.2726 22.2115 24.1741 16.1246 24.1741ZM16.1246 26.84C8.76285 26.84 2.79502 20.8722 2.79502 13.5105C2.79502 6.14875 8.76285 0.180908 16.1246 0.180908C23.4863 0.180908 29.4541 6.14875 29.4541 13.5105C29.4541 20.8722 23.4863 26.84 16.1246 26.84Z" fill="white"/>
-            </svg>
-          </button>
+          <div class="header__form-container">
+            <div class="header__form-search-container">
+              <button class="header__search-btn btn-reset">
+                <svg class="header__search-btn-svg" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58142 21.0461)" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.1741C10.0376 24.1741 5.32763 19.2726 5.32763 13.5105C5.32763 7.74829 10.0376 2.84682 16.1246 2.84682C22.2115 2.84682 26.9215 7.74829 26.9215 13.5105C26.9215 19.2726 22.2115 24.1741 16.1246 24.1741ZM16.1246 26.84C8.76285 26.84 2.79502 20.8722 2.79502 13.5105C2.79502 6.14875 8.76285 0.180908 16.1246 0.180908C23.4863 0.180908 29.4541 6.14875 29.4541 13.5105C29.4541 20.8722 23.4863 26.84 16.1246 26.84Z" fill="white"/>
+                </svg>
+              </button>
+              <form action="/" class="header__form-search">
+                <button class="header__form-btn-submit">
+                  <svg class="header__search-btn-svg" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58142 21.0461)" fill="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.1741C10.0376 24.1741 5.32763 19.2726 5.32763 13.5105C5.32763 7.74829 10.0376 2.84682 16.1246 2.84682C22.2115 2.84682 26.9215 7.74829 26.9215 13.5105C26.9215 19.2726 22.2115 24.1741 16.1246 24.1741ZM16.1246 26.84C8.76285 26.84 2.79502 20.8722 2.79502 13.5105C2.79502 6.14875 8.76285 0.180908 16.1246 0.180908C23.4863 0.180908 29.4541 6.14875 29.4541 13.5105C29.4541 20.8722 23.4863 26.84 16.1246 26.84Z" fill="white"/>
+                  </svg>
+                </button>
+                <input type="text" class="header__form-search-input" placeholder="Поиск по сайту">
+              </form>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
@@ -55,7 +69,7 @@
       <div class="container header__style-container">
         <ul class="header__style-list list-reset">
           <li class="header__style-item">
-            <button id="header__select-1" class="header__style-btn">
+            <button class="header__style-btn">
               Релизм
               <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L1 1" stroke="white"/>
@@ -83,7 +97,7 @@
             </div>
           </li>
           <li class="header__style-item">
-            <button id="header__select-2" class="header__style-btn">
+            <button class="header__style-btn">
               Импрессионизм
               <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L1 1" stroke="white"/>
@@ -111,7 +125,7 @@
             </div>
           </li>
           <li class="header__style-item">
-            <button id="header__select-3" class="header__style-btn">
+            <button class="header__style-btn">
               Постимпрессионизм
               <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L1 1" stroke="white"/>
@@ -139,7 +153,7 @@
             </div>
           </li>
           <li class="header__style-item">
-            <button id="header__select-4" class="header__style-btn">
+            <button class="header__style-btn">
               Авангард
               <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L1 1" stroke="white"/>
@@ -167,7 +181,7 @@
             </div>
           </li>
           <li class="header__style-item">
-            <button id="header__select-5" class="header__style-btn">
+            <button class="header__style-btn">
               Футуризм
               <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L1 1" stroke="white"/>
@@ -196,7 +210,7 @@
           </li>
         </ul>
         <div class="header__seach-wrap">
-          <span class="header__seach-icon"></span>
+          <button class="header__seach-icon btn-reset"></button>
           <input type="text" class="header__search" placeholder="Поиск по сайту" aria-label="поиск по сайту">
         </div>
       </div>
@@ -227,7 +241,7 @@
     <section class="about">
       <div class="container">
         <div class="about__container">
-          <h2 class="about__title title">О нас</h2>
+          <h2 class="about__title title">О нас<a id="about"></a></h2>
           <p class="about__descr">
             Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
           </p>
@@ -240,7 +254,7 @@
           <div class="gallery__content-wrapper">
             <div class="gallery__filter">
               <div class="filter-wrapper">
-                <h2 class="gallery__title title">Галерея</h2>
+                <h2 class="gallery__title title">Галерея <a id="gallery"></a></h2>
                 <h4 class="gallery__subtitle">Фильтр:</h4>  
                 <select class="gallery__select" name="gallery" id="customSelect">
                   <option class="gallery__option" value="artstyle">Живопись</option>
@@ -280,24 +294,53 @@
                   <div class="gallery-button-next"></div>
                 </div>
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide gallery__slide">
-                    <img src="img/gallery-img-1.jpg" alt="gallery-image">
-                  </div>
-                  <div class="swiper-slide gallery__slide">
-                    <img src="img/gallery-img-2.jpg" alt="gallery-image">
-                  </div>
-                  <div class="swiper-slide gallery__slide">
-                    <img src="img/gallery-img-3.jpg" alt="gallery-image">
-                  </div>
-                  <div class="swiper-slide gallery__slide">
-                    <img src="img/gallery-img-3.jpg" alt="gallery-image">
-                  </div>
-                  <div class="swiper-slide gallery__slide">
-                    <img src="img/gallery-img-3.jpg" alt="gallery-image">
-                  </div>
-                  <div class="swiper-slide gallery__slide">
-                    <img src="img/gallery-img-3.jpg" alt="gallery-image">
-                  </div>
+                  <button class="swiper-slide gallery__slide btn-reset">
+                    <picture>
+                      <source srcset="img/gallery-img-1-320.jpg" media="(max-width: 320px)">
+                      <source srcset="img/gallery-img-1-768.jpg" media="(max-width: 768px)">
+                      <source srcset="img/gallery-img-1-1024.jpg" media="(max-width: 1024px)">
+                      <img src="img/gallery-img-1.jpg" alt="gallery-image">
+                    </picture>
+                  </button>
+                  <button class="swiper-slide gallery__slide btn-reset">
+                    <picture>
+                      <source srcset="img/gallery-img-2-320.jpg" media="(max-width: 320px)">
+                      <source srcset="img/gallery-img-2-768.jpg" media="(max-width: 768px)">
+                      <source srcset="img/gallery-img-2-1024.jpg" media="(max-width: 1024px)">
+                      <img src="img/gallery-img-2.jpg" alt="gallery-image">
+                    </picture>
+                  </button>
+                  <button class="swiper-slide gallery__slide btn-reset">
+                    <picture>
+                      <source srcset="img/gallery-img-3-320.jpg" media="(max-width: 320px)">
+                      <source srcset="img/gallery-img-3-768.jpg" media="(max-width: 768px)">
+                      <source srcset="img/gallery-img-3-1024.jpg" media="(max-width: 1024px)">
+                      <img src="img/gallery-img-3.jpg" alt="gallery-image">
+                    </picture>
+                  </button>
+                  <button class="swiper-slide gallery__slide btn-reset">
+                    <picture>
+                      <source srcset="img/gallery-img-4-320.jpg" media="(max-width: 320px)">
+                      <source srcset="img/gallery-img-4-768.jpg" media="(max-width: 768px)">
+                      <source srcset="img/gallery-img-4-1024.jpg" media="(max-width: 1024px)">
+                      <img src="img/gallery-img-4.jpg" alt="gallery-image">
+                    </picture>
+                  </button>
+                  <button class="swiper-slide gallery__slide btn-reset">
+                    <picture>
+                      <source srcset="img/gallery-img-5-320.jpg" media="(max-width: 320px)">
+                      <source srcset="img/gallery-img-5-768.jpg" media="(max-width: 768px)">
+                      <source srcset="img/gallery-img-5-1024.jpg" media="(max-width: 1024px)">
+                      <img src="img/gallery-img-5.jpg" alt="gallery-image">
+                    </picture>
+                  </button>
+                  <button class="swiper-slide gallery__slide btn-reset">
+                    <picture>
+                      <source srcset="img/gallery-img-6-768.jpg" media="(max-width: 768px)">
+                      <source srcset="img/gallery-img-6-1024.jpg" media="(max-width: 1024px)">
+                      <img src="img/gallery-img-6.jpg" alt="gallery-image">
+                    </picture>
+                  </button>
                 </div>
               </div>
             </div>
@@ -308,7 +351,7 @@
     <section class="catalog">
       <div class="container">
         <div class="catalog__container">
-          <h2 class="catalog__title title">Каталог</h2>
+          <h2 class="catalog__title title">Каталог<a id="catalog"></a></h2>
           <p class="catalog__descr">
             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. 
           </p>
@@ -474,7 +517,7 @@
     <section class="event">
       <div class="container">
         <div class="event__container">
-          <h2 class="event__title title">События</h2>
+          <h2 class="event__title title">События <a id="event"></a></h2>
          <div class="swiper event__swiper">
            <div class="swiper-wrapper event-wrapper">
               <div class="swiper-slide event__slide">
@@ -571,8 +614,8 @@
               </div>
             </div>
             <div class="event__pagination"></div>
-            <div class="event__button-prev"></div>
           </div>
+          <div class="event__button-prev"></div>
           <div class="event__button-next"></div>
         </div>
       </div>
@@ -581,7 +624,7 @@
     <section class="project">
       <div class="container">
         <div class="project__container">
-          <h2 class="project__title title">Проекты</h2>
+          <h2 class="project__title title">Проекты <a id="project"></a></h2>
           <p class="project__descr">
             Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей 
             деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. 
@@ -622,24 +665,33 @@
             <div class="swiper project__swiper">
               <div class="project__button-prev"></div>
               <div class="swiper-wrapper project__swiper-wrapper">
-                <div class="swiper-slide project__slide">
-                  <img src="img/project-img-1.png" alt="картинка партнера">
-                </div>
-                <div class="swiper-slide project__slide">
-                  <img src="img/project-img-2.png" alt="картинка партнера">
-                </div>
-                <div class="swiper-slide project__slide">
-                  <img src="img/project-img-3.png" alt="картинка партнера">
-                </div>
-                <div class="swiper-slide project__slide">
-                  <img src="img/project-img-3.png" alt="картинка партнера">
-                </div>
-                <div class="swiper-slide project__slide">
-                  <img src="img/project-img-3.png" alt="картинка партнера">
-                </div>
-                <div class="swiper-slide project__slide">
-                  <img src="img/project-img-3.png" alt="картинка партнера">
-                </div>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-freeland.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-institute.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-workhouse.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-watts.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-hiscox.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-gamden.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-1849.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-esad.png" alt="картинка партнера">
+                </a>
+                <a href="#" class="swiper-slide project__slide">
+                  <img src="img/project-img-stassen.png" alt="картинка партнера">
+                </a>
               </div>
               <div class="project__button-next"></div>
             </div>
@@ -651,7 +703,7 @@
       <div class="container">
         <div class="contact__container">
           <div class="contact__adress-wrap">
-            <h3 class="contact__form-title title">Шоурум №4</h3>
+            <h3 class="contact__form-title title">Шоурум №4 <a id="contact"></a></h3>
             <span class="contact__form-adress">Леонтьевский переулок, дом 5/1</span>
           </div>
           <form action="#" class="js-form contact__form">
@@ -717,10 +769,12 @@
     <div class="container">
       <div class="footer__container">
         <div class="footer__logo-wrap">
-          <picture>
-            <source srcset="img/logo-mobile.svg" media="(max-width: 320px)">
-            <img src="img/logo.svg" alt="logo">
-          </picture>
+          <a href="#" class="footer__logo-link">
+            <picture>
+              <source srcset="img/logo-mobile.svg" media="(max-width: 320px)">
+              <img src="img/logo.svg" alt="logo">
+            </picture>
+          </a>
         </div>  
         <ul class="footer__social-list list-reset">
           <li class="footer__social-icon">

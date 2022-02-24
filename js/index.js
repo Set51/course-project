@@ -1,3 +1,18 @@
+document.querySelector(".header__search-btn").addEventListener("click", function() {
+    document.querySelector(".header__form-search").classList.add("form-search__active");
+        this.classList.add("active");
+    })
+  
+  document.addEventListener("click", function(e) {
+    let target = e.target;
+    let form = document.querySelector(".header__form-search");
+    if (!target.closest(".header__form-search-container")) {
+    form.classList.remove("form-search__active");
+      form.querySelector("input").value = "";
+      document.querySelector(".header__search-btn").classList.remove("active")
+    }
+})
+
 document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".header__style-btn").forEach(item => {
         item.addEventListener("click", function() {
@@ -13,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     })
 })
+
+window.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#header__burger').addEventListener('click', function() {
+        document.querySelector('.header__burger-menu').classList.toggle('menu-is-active');
+        document.querySelector('#header__burger').classList.toggle('menu-is-active');
+    });
+
+});
 
 document.addEventListener("click", function (e) {
     let target = e.target;
@@ -97,7 +120,7 @@ window.addEventListener('DOMContentLoaded', function() {
             },
             1024: {
                 slidesPerView: 2,
-                spaceBetween: 34
+                spaceBetween: 10
             },
             768: {
                 slidesPerView: 2,
@@ -130,7 +153,7 @@ window.addEventListener('DOMContentLoaded', function() {
         breakpoints: {
             1620: {
                 slidesPerView: 3,
-                spaceBetween: 20
+                spaceBetween: 50
             },
             1440: {
                 slidesPerView: 3,
@@ -256,6 +279,15 @@ new JustValidate('.js-form', {
         
     },
     colorWrong: '#D11616'
+});
+
+$(document).ready(function(){
+    $("#nav-menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1200);
+    });
 });
 
 
