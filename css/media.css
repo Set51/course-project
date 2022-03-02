@@ -434,6 +434,10 @@
         padding: 13px;
     }
 
+    .swiper-pagination-bullet-active {
+        background-color: var(--color-grey);
+    }
+
     .contact__adress-wrap {
         margin-bottom: 35px;
     }
@@ -571,10 +575,6 @@
 
     .event__content-wrapper {
         padding-bottom: 33px;
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: var(--color-grey);
     }
 
     .project__descr {
