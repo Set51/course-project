@@ -207,8 +207,7 @@ body {
     bottom: -6px;
     right: -6px;
     z-index: -1;
-    border: 2px solid var(--color-primary);
-    border-radius: 100px;
+    background-color: var(--color-primary);
     opacity: 0;
     transition: opacity .4s ease-in-out;
 }
@@ -226,20 +225,19 @@ body {
 }
 
 .header__btn:hover:not(:focus-visible) {
-    color: var(--color-light);
+    color: var(--color-primary);
 }
 
 .header__btn:hover svg path:not(:focus-visible) {
-    fill: var(--color-light);
+    fill: var(--color-primary);
 }
 
 .header__btn:active:not(:focus-visible) {
-    color: var(--color-light);
-    background-color: var(--color-primary-dark);
+    color: var(--color-primary-dark);
 }
 
 .header__btn:active svg path:not(:focus-visible) {
-    fill: var(--color-light);
+    fill: var(--color-primary-dark);
 }
 
 .header__form-container {

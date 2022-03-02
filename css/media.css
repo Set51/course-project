@@ -194,13 +194,23 @@
         transition: background-color .3s ease-in-out, color .3s ease-in-out;
     }
 
-    .header__btn:hover {
+    .header__btn::before {
+        border: 2px solid var(--color-primary);
+        border-radius: 100px;
+        background-color: transparent;
+    }
+
+    .header__btn:hover:not(:focus-visible) {
         background-color: var(--color-primary);
         color: var(--color-light);
     }
 
-    .header__btn:hover svg path {
+    .header__btn:hover svg path:not(:focus-visible) {
         fill: var(--color-light);
+    }
+
+    .header__btn:active:not(:focus-visible) {
+        background-color: var(--color-primary-dark);
     }
 
     .header__form-search {
