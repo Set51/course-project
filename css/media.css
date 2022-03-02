@@ -388,6 +388,10 @@
         margin-bottom: 20px;
     }
 
+    .event__button-prev {
+        display: none;
+    }
+
     .event__button-next {
         display: none;
     }
