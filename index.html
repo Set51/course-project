@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blanchard</title>
+    <link rel="shortcut icon" href="img/favicon.svg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/choices.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
@@ -56,7 +57,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.1741C10.0376 24.1741 5.32763 19.2726 5.32763 13.5105C5.32763 7.74829 10.0376 2.84682 16.1246 2.84682C22.2115 2.84682 26.9215 7.74829 26.9215 13.5105C26.9215 19.2726 22.2115 24.1741 16.1246 24.1741ZM16.1246 26.84C8.76285 26.84 2.79502 20.8722 2.79502 13.5105C2.79502 6.14875 8.76285 0.180908 16.1246 0.180908C23.4863 0.180908 29.4541 6.14875 29.4541 13.5105C29.4541 20.8722 23.4863 26.84 16.1246 26.84Z" fill="white"/>
                   </svg>
                 </button>
-                <input type="text" class="header__form-search-input" placeholder="Поиск по сайту">
+                <input type="text" class="header__form-search-input">
               </form>
             </div>
           </div>
@@ -207,7 +208,7 @@
             </div>
           </li>
         </ul>
-        <div class="header__seach-wrap">
+        <div class="header__search-wrap">
           <button class="header__seach-icon btn-reset"></button>
           <input type="text" class="header__search" placeholder="Поиск по сайту" aria-label="поиск по сайту">
         </div>
@@ -660,36 +661,38 @@
           </p>
           <div class="project__swiper-container">
             <h3 class="project__swiper-title">Партнеры проектов</h3>
-            <div class="swiper project__swiper">
+            <div class="project__swiper-parent">
               <div class="project__button-prev"></div>
-              <div class="swiper-wrapper project__swiper-wrapper">
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-freeland.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-institute.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-workhouse.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-watts.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-hiscox.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-gamden.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-1849.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-esad.png" alt="картинка партнера">
-                </a>
-                <a href="#" class="swiper-slide project__slide">
-                  <img src="img/project-img-stassen.png" alt="картинка партнера">
-                </a>
+              <div class="swiper project__swiper">
+                <div class="swiper-wrapper project__swiper-wrapper">
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-freeland.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-institute.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-workhouse.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-watts.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-hiscox.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-gamden.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-1849.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-esad.png" alt="картинка партнера">
+                  </a>
+                  <a href="#" class="swiper-slide project__slide">
+                    <img src="img/project-img-stassen.png" alt="картинка партнера">
+                  </a>
+                </div>    
               </div>
               <div class="project__button-next"></div>
             </div>
