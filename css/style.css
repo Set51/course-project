@@ -249,7 +249,7 @@ body {
     fill: var(--color-primary-dark);
 }
 
-.header__form-container {
+.header__form-search-container {
     position: relative;
 }
 
@@ -272,19 +272,14 @@ body {
     top: -200%;
     right: 35px;
     padding: 5px 3px 5px 12px;
-    border-radius: 20px;
     transform: translateY(-50%);
-    background-color: transparent;
+    background-color: var(--color-dark);
     opacity: 0;
     transition: transform .3s ease-in-out, opacity .3s ease-in-out .2s, top .3s ease-in-out;
 }
 
-.header__form-search-container {
-    display: inline-block;
-}
-
 .header__form-search.form-search__active {
-    top: 50%;
+    top: 49%;
     opacity: 1;
 }
 
@@ -303,7 +298,6 @@ body {
 }
 
 .header__form-search-input {
-    max-width: 250px;
     font-size: 18px;
     line-height: 25px;
     outline: none;

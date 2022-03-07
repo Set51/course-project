@@ -126,7 +126,7 @@ window.addEventListener('DOMContentLoaded', function() {
             },
             1024: {
                 slidesPerView: 2,
-                spaceBetween: 10
+                spaceBetween: 34
             },
             768: {
                 slidesPerView: 2,
