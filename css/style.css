@@ -253,12 +253,19 @@ body {
     position: relative;
 }
 
+
+
 .header__search-btn {
     position: relative;
     z-index: 3;
     display: none;
     width: 30px;
     height: 30px;
+}
+
+.header__search-btn.active {
+    background-image: url('../img/X.svg');
+    z-index: 105;
 }
 
 .header__search-wrap input::placeholder {
@@ -378,6 +385,7 @@ body {
 }
 
 .header__style-btn {
+    position: relative;
     cursor: pointer;
     font-size: 18px;
     line-height: 25px;
@@ -414,29 +422,39 @@ body {
 }
 
 .header__style-btn svg path {
-    transition: fill .3s ease-in-out;
+    transition: stroke .3s ease-in-out;
+}
+
+.header__style-btn svg {
+    transition: transform .2s ease-in-out;
 }
 
 .header__style-btn:hover svg path {
-    fill: var(--color-primary);
+    stroke: var(--color-primary);
 }
 
 .header__style-btn:hover svg path {
-    fill: var(--color-primary);
+    stroke: var(--color-primary);
 }
 
 .header__style-btn:active svg path {
-    fill: var(--color-primary-dark);
+    stroke: var(--color-primary-dark);
+}
+
+.active--btn svg { 
+    transform: rotate(180deg);
 }
 
 .header__menu {
-    display: none;
     position: absolute;
-    top: 70px;
+    top: 68px;
     width: 300px;
     height: 300px;
     padding: 0 40px;
     background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
 }
 
 .header__menu--position-2 {
@@ -456,23 +474,35 @@ body {
 }
 
 .header__menu-item {
-    position: relative;
     width: 220px;
     height: 40px;
+}
+
+
+.header__menu-item-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     padding: 9px 14px;
-    cursor: pointer;
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
     color: var(--color-light);
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    background-size: 220px 40px;
+    background-size: cover;
     background-repeat: no-repeat;
+    transition: outline-color .3s ease-in-out;
 }
 
 .header__menu-item:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.header__menu-item::before {
+.header__menu-item-link::before {
     content: "";
     position: absolute;
     top: 0;
@@ -480,28 +510,30 @@ body {
     bottom: 0;
     left: 0;
     opacity: 0;
-    border: 2px solid transparent;
+    z-index: 1;
+    border: 2px solid var(--color-primary);
     background-color: var(--color-primary-light);
+    opacity: 0;
     transition: opacity .2s ease-in-out;
 }
 
-.header__menu-item:hover::before {
-    opacity: 1;
-    border: 2px solid var(--color-primary);
-    background-color: transparent;
+.header__menu-item-link:hover {
+    outline-color: var(--color-primary);
 }
 
-.header__menu-item:active::before {
+.header__menu-item-link:focus {
+    outline-color: var(--color-primary);
+}
+
+.header__menu-item-link:active::before {
     opacity: 0.4;
-    border: 2px solid var(--color-primary);
-    background-color: var(--color-primary-light);
 }
 
 .header__menu-item--tintoretto {
     background-image: url('../img/tintoretto.png');
 }
 
-.header__menu-item--fridrih {
+.header__menu-item-link--fridrih {
     background-image: url('../img/fridrih.png');
 }
 
@@ -578,7 +610,8 @@ body {
 }
 
 .header__menu--is-active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .is-hidden {
@@ -953,6 +986,10 @@ body {
     border-radius: 10px;
 }
 
+.choices__item--choice {
+    border-bottom: 1px solid var(--color-grey-light);
+}
+
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
     background-color: transparent;
 }
@@ -966,6 +1003,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: var(--color-light);
+    
     transition: background-color .3s ease-in-out;
 }
 
@@ -995,12 +1033,10 @@ body {
 }
 
 .gallery__check-item {
-    
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
 }
-
 
 .gallery__check-input {
     appearance: none;
@@ -1979,8 +2015,6 @@ body {
 .footer__social-link:active svg path {
     fill: var(--color-primary);
 }
-
-
 
 .footer__social-svg:hover {
     fill: #fff;

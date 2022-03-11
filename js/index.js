@@ -20,12 +20,19 @@ document.addEventListener("DOMContentLoaded", function() {
             let btn = this;
             let dropdown = this.parentElement.querySelector(".header__menu");
 
+            document.querySelectorAll(".header__style-btn").forEach(el => {
+                if (el != btn) {
+                  el.classList.remove("active--btn");
+                }
+            });
+
             document.querySelectorAll(".header__menu").forEach(el => {
                 if (el != dropdown) {
                     el.classList.remove("header__menu--is-active");
                 }
             })
-            dropdown.classList.toggle("header__menu--is-active")
+            dropdown.classList.toggle("header__menu--is-active");
+            btn.classList.toggle("active--btn")
         })
     })
 })
@@ -203,20 +210,26 @@ $( function() {
     });
 });
 
-document.querySelectorAll('.tabs-btn').forEach(function(tabsBtn){
-    tabsBtn.addEventListener('click', function(e){
-    const path = e.currentTarget.dataset.path;
-    document.querySelectorAll('.tabs-btn').forEach(function(btn){
-    btn.classList.remove('tabs-btn--active')});
-    e.currentTarget.classList.add('tabs-btn--active');
-    document.querySelectorAll('.tabs-item').forEach(function(tabsBtn){
-    tabsBtn.classList.remove('tabs-item--active')});
-    document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
-
-    $('.accordion').accordion("refresh");
+window.addEventListener('resize', function() {
+    document.querySelectorAll('.tabs-btn').forEach(function(tabsBtn){
+        tabsBtn.addEventListener('click', function(e){
+        const path = e.currentTarget.dataset.path;
+        document.querySelectorAll('.tabs-btn').forEach(function(btn){
+        btn.classList.remove('tabs-btn--active')});
+        e.currentTarget.classList.add('tabs-btn--active');
+        document.querySelectorAll('.tabs-item').forEach(function(tabsBtn){
+        tabsBtn.classList.remove('tabs-item--active')});
+        document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
+    
+        
+        });
+        
     });
-   
+
 });
+
+
+
 
 tippy('#tooltip-1', {
     content: 'Пример современных тенденций - современная методология разработки ',

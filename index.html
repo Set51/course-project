@@ -18,7 +18,9 @@
   <header class="header">
     <div class="header__nav-wrapper">
       <div class="container header__nav-container">
+
         <button class="header__burger" id="header__burger" aria-label="бургер меню"></button>
+        
         <a href="#" class="header__logo-link">
           <picture>
             <source srcset="img/logo-mobile.svg" media="(max-width: 320px)">
@@ -76,7 +78,9 @@
             </button>
             <div class="header__menu header__menu--position-1" id="header__menu-1" data-simplebar data-simplebar-auto-hide="false">
               <ul class="header__menu-list list-reset" >
-                <li class="header__menu-item header__menu-item--fridrih">Фридрих</li>
+                <li class="header__menu-item">
+                  <a class="header__menu-item-link header__menu-item-link--fridrih" href="#">Фридрих</a>
+                </li>
                 <li class="header__menu-item header__menu-item--tintoretto">Тинторетто</li>
                 <li class="header__menu-item header__menu-item--leonardo">Леонардо</li>
                 <li class="header__menu-item header__menu-item--verokye">Верроккьо</li>
@@ -98,7 +102,7 @@
           <li class="header__style-item">
             <button class="header__style-btn">
               Импрессионизм
-              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg  class="header__style-btn-svg" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L1 1" stroke="white"/>
                 </svg>
             </button>

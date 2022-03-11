@@ -166,6 +166,12 @@
         width: 100%;
     }
 
+    /* .header__burger.menu-is-active {
+        position: absolute;
+        right: 50px;
+        top: 40px;
+    } */
+
     .header__burger-menu {
         display: flex;
         flex-direction: column;
