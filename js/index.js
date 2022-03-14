@@ -1,6 +1,6 @@
 document.querySelector(".header__search-btn").addEventListener("click", function() {
-    document.querySelector(".header__form-search").classList.add("form-search__active");
-        this.classList.add("active");
+    document.querySelector(".header__form-search").classList.toggle("form-search__active");
+        this.classList.toggle("active");
         
     })
 
@@ -95,11 +95,11 @@ window.addEventListener('DOMContentLoaded', function() {
                 slidesPerView: 3,
                 spaceBetween: 25
             },
-            900: {
+            920: {
                 slidesPerView: 3,
                 spaceBetween: 25
             },
-            640: {
+            750: {
                 slidesPerView: 2,
                 spaceBetween: 34
             },
@@ -133,7 +133,7 @@ window.addEventListener('DOMContentLoaded', function() {
             },
             1024: {
                 slidesPerView: 2,
-                spaceBetween: 34
+                spaceBetween: 10
             },
             768: {
                 slidesPerView: 2,
@@ -180,7 +180,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 slidesPerView: 2,
                 spaceBetween: 34
             },
-            640: {
+            750: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
@@ -206,30 +206,23 @@ const choices = new Choices(element, {
 
 $( function() {
     $( "#accordion" ).accordion({
-        collapsible: true
+        collapsible: true,
+        heightStyle: "content"
     });
 });
 
-window.addEventListener('resize', function() {
-    document.querySelectorAll('.tabs-btn').forEach(function(tabsBtn){
-        tabsBtn.addEventListener('click', function(e){
-        const path = e.currentTarget.dataset.path;
-        document.querySelectorAll('.tabs-btn').forEach(function(btn){
-        btn.classList.remove('tabs-btn--active')});
-        e.currentTarget.classList.add('tabs-btn--active');
-        document.querySelectorAll('.tabs-item').forEach(function(tabsBtn){
-        tabsBtn.classList.remove('tabs-item--active')});
-        document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
-    
-        
-        });
-        
-    });
+document.querySelectorAll('.tabs-btn').forEach(function(tabsBtn){
+    tabsBtn.addEventListener('click', function(e){
+    const path = e.currentTarget.dataset.path;
+    document.querySelectorAll('.tabs-btn').forEach(function(btn){
+    btn.classList.remove('tabs-btn--active')});
+    e.currentTarget.classList.add('tabs-btn--active');
+    document.querySelectorAll('.tabs-item').forEach(function(tabsBtn){
+    tabsBtn.classList.remove('tabs-item--active')});
+    document.querySelector(`[data-target="${path}"]`).classList.add('tabs-item--active');
 
+    })    
 });
-
-
-
 
 tippy('#tooltip-1', {
     content: 'Пример современных тенденций - современная методология разработки ',

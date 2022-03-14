@@ -253,19 +253,55 @@ body {
     position: relative;
 }
 
-
-
 .header__search-btn {
     position: relative;
-    z-index: 3;
+    z-index: 102;
     display: none;
     width: 30px;
     height: 30px;
+    outline: none;
 }
 
-.header__search-btn.active {
-    background-image: url('../img/X.svg');
-    z-index: 105;
+.header__search-btn::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    background-color: var(--color-primary);
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+}
+
+.header__search-btn:focus-visible::before {
+    opacity: 1;
+}
+
+.header__search-btn svg path {
+    transition: fill .3s ease-in-out;
+}
+
+.header__search-btn svg rect {
+    transition: fill .3s ease-in-out;
+}
+
+.header__search-btn:hover svg path {
+    fill: var(--color-primary);
+}
+
+.header__search-btn:hover svg rect {
+    fill: var(--color-primary);
+}
+
+.header__search-btn:active svg path {
+    fill: var(--color-primary-dark);
+}
+
+.header__search-btn:active svg rect {
+    fill: var(--color-primary-dark);
 }
 
 .header__search-wrap input::placeholder {
@@ -290,13 +326,14 @@ body {
     opacity: 1;
 }
 
-.header__search-btn-close.search__active {
-    top: -200px;
-    opacity: 1;
+.header__search-btn.active {
+    background-image: url('../img/X.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.header__search-btn.active {
-    opacity: 0;
+.header__search-btn.active svg {
+    visibility: hidden;
 }
 
 .header__form-btn-submit {
@@ -529,7 +566,7 @@ body {
     opacity: 0.4;
 }
 
-.header__menu-item--tintoretto {
+.header__menu-item-link--tintoretto {
     background-image: url('../img/tintoretto.png');
 }
 
@@ -537,75 +574,75 @@ body {
     background-image: url('../img/fridrih.png');
 }
 
-.header__menu-item--leonardo {
+.header__menu-item-link--leonardo {
     background-image: url('../img/leonardo.png');
 }
 
-.header__menu-item--verokye {
+.header__menu-item-link--verokye {
     background-image: url('../img/verokye.png');
 }
 
-.header__menu-item--mone {
+.header__menu-item-link--mone {
     background-image: url('../img/mone.png');
 }
 
-.header__menu-item--sisley {
+.header__menu-item-link--sisley {
     background-image: url('../img/sisley.png');
 }
 
-.header__menu-item--mane {
+.header__menu-item-link--mane {
     background-image: url('../img/mane.png');
 }
 
-.header__menu-item--renuar {
+.header__menu-item-link--renuar {
     background-image: url('../img/renuar.png');
 }
 
-.header__menu-item--vangog {
+.header__menu-item-link--vangog {
     background-image: url('../img/vangog.png');
 }
 
-.header__menu-item--sezann {
+.header__menu-item-link--sezann {
     background-image: url('../img/sezann.png');
 }
 
-.header__menu-item--gogen {
+.header__menu-item-link--gogen {
     background-image: url('../img/gogen.png');
 }
 
-.header__menu-item--sera {
+.header__menu-item-link--sera {
     background-image: url('../img/sera.png');
 }
 
-.header__menu-item--kandinskiy {
+.header__menu-item-link--kandinskiy {
     background-image: url('../img/kandinskiy.png');
 }
 
-.header__menu-item--marinetti {
+.header__menu-item-link--marinetti {
     background-image: url('../img/marinetti.png');
 }
 
-.header__menu-item--malevich {
+.header__menu-item-link--malevich {
     background-image: url('../img/malevich.png');
 }
 
-.header__menu-item--picasso {
+.header__menu-item-link--picasso {
     background-image: url('../img/picasso.png');
 }
 
-.header__menu-item--karra {
+.header__menu-item-link--karra {
     background-image: url('../img/karra.png');
 }
 
-.header__menu-item--pratella {
+.header__menu-item-link--pratella {
     background-image: url('../img/pratella.png');
 }
 
-.header__menu-item--severini {
+.header__menu-item-link--severini {
     background-image: url('../img/severini.png');
 }
 
-.header__menu-item--balla {
+.header__menu-item-link--balla {
     background-image: url('../img/balla.png');
 }
 
@@ -986,7 +1023,7 @@ body {
     border-radius: 10px;
 }
 
-.choices__item--choice {
+.choices__item--choice:not(:last-child) {
     border-bottom: 1px solid var(--color-grey-light);
 }
 
@@ -1723,7 +1760,7 @@ body {
 }
 
 .project__slide img {
-    opacity: 0.8;
+    opacity: 0.4;
     filter: grayscale(100%);
 }
 
