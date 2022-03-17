@@ -38,6 +38,17 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 window.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.header__link').forEach(link => {
+        link.addEventListener('click', function() {
+        document.querySelector('.header__burger-menu').classList.toggle('menu-is-active');
+        document.querySelector('#header__burger').classList.toggle('menu-is-active');
+        document.querySelector('body').classList.toggle('is-hidden');
+       });
+    });
+
+});
+
+window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#header__burger').addEventListener('click', function() {
         document.querySelector('.header__burger-menu').classList.toggle('menu-is-active');
         document.querySelector('#header__burger').classList.toggle('menu-is-active');
@@ -295,6 +306,24 @@ new JustValidate('.js-form', {
 
 $(document).ready(function(){
     $("#nav-menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1200);
+    });
+});
+
+$(document).ready(function(){
+    $("#hero-btn").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1200);
+    });
+});
+
+$(document).ready(function(){
+    $("#gallery-link").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
