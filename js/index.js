@@ -38,21 +38,21 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 window.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.header__link').forEach(link => {
-        link.addEventListener('click', function() {
+    document.querySelector('#header__burger').addEventListener('click', function() {
         document.querySelector('.header__burger-menu').classList.toggle('menu-is-active');
         document.querySelector('#header__burger').classList.toggle('menu-is-active');
         document.querySelector('body').classList.toggle('is-hidden');
-       });
     });
 
 });
 
 window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#header__burger').addEventListener('click', function() {
-        document.querySelector('.header__burger-menu').classList.toggle('menu-is-active');
-        document.querySelector('#header__burger').classList.toggle('menu-is-active');
-        document.querySelector('body').classList.toggle('is-hidden');
+    document.querySelectorAll('.header__link').forEach(link => {
+        link.addEventListener('click', function() {
+        document.querySelector('.header__burger-menu').classList.remove('menu-is-active');
+        document.querySelector('#header__burger').classList.remove('menu-is-active');
+        document.querySelector('body').classList.remove('is-hidden');
+       });
     });
 
 });
@@ -62,8 +62,8 @@ document.addEventListener("click", function (e) {
     if (!target.closest(".header__style-list")) {
         document.querySelectorAll(".header__menu").forEach(el => {
             el.classList.remove("header__menu--is-active");
-        })
-    }
+        });
+    };
 })
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -311,25 +311,29 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1200);
     });
-});
 
-$(document).ready(function(){
     $("#hero-btn").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1200);
     });
+
+    $("a.catalog__plug-link").click(function() {
+        $("html, body").animate({
+           scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+           duration: 500,
+           easing: "swing"
+        });
+        return false;
+    });
+    
+    
 });
 
-$(document).ready(function(){
-    $("#gallery-link").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1200);
-    });
-});
+
+
 
 
 
