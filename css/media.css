@@ -1178,7 +1178,7 @@
         display: none;
     }
 
-    .contact__btn--media {
+    .contact__btn-media {
         display: block;
         position: relative;
         padding: 10px 33px;
@@ -1192,7 +1192,7 @@
         transition: color .3s ease-in-out, background-color .3s ease-in-out; 
     }
 
-    .contact__btn--media::before {
+    .contact__btn-media::before {
         content: "";
         position: absolute;
         top: -6px;
@@ -1206,16 +1206,16 @@
         transition: opacity .4s ease-in-out;
     }
 
-    .contact__btn--media:focus-visible::before {
+    .contact__btn-media:focus-visible::before {
         opacity: 1;
     }
 
-    .contact__btn--media:hover:not(:focus-visible) {
+    .contact__btn-media:hover:not(:focus-visible) {
         color: var(--color-light);
         background-color: var(--color-primary);
     }
 
-    .contact__btn--media:active:not(:focus-visible) {
+    .contact__btn-media:active:not(:focus-visible) {
         background-color: var(--color-primary-dark);
         color: var(--color-light);
     }
